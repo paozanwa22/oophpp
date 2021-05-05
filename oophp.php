@@ -1,5 +1,5 @@
 <?php 
-
+// Object Type.php
 class Produk {
   public $judul,$penulis,$penerbit,$harga;
   public function __construct($judul = "judul",$penulis = "penulis",$penerbit = "penerbit",$harga = 0) {
