@@ -15,16 +15,16 @@ class Produk {
 }
 
 class CetakInfoProduk {
-  public function cetak( Produk $produ ) { //objec dengan tipe dada sendiri. (Produk = tipe data, $produk = Objec)
+  public function cetak( Produk $produ ) {
     $str = "{$produ->judul} | {$produ->getLabel()} (Rp. {$produ->harga})";
     return $str;
   }
 }
 
 $produk1 = new Produk("Naruto","Masashi Kishimoto","Shonen Jump", 30000);
+$produk2 = new Produk("Life","Kuskus","Wolan", 40000);
 echo "Komik : " . $produk1->getLabel();
 echo "<br>";
-
 $infoProduk1 = new CetakInfoProduk();
-echo $infoProduk1->cetak($produk1);
+echo "Games : " . $infoProduk1->cetak($produk2);
 
